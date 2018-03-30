@@ -4,3 +4,8 @@ mongo Db==>npm install --save mongodb
 react dom==>npm install --save react react-dom
 webpack ==>npm install --save-dev webpck
 Babel ==>npm install -D babel-cli babel-loader babel-preset-es2015 babel-preset-stage-2 babel-preset-react babel-preset-env
+nodemon ==>npm install -D nodemon
+eslint ==>npm install -D eslint eslint-plugin-react babel-eslint
+
+make directories api,public,src
+make files like index.js,index.html,index.js in above folders respectively.
