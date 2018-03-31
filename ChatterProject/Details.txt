@@ -1,0 +1,3 @@
+Install
+express,nodemon,socket.io==>npm i --save express nodemon socket.io
+dev dependencies ==> npm i --save-dev  babel-cli babel-preset-env babel-preset-stage-0
