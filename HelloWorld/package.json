@@ -1,0 +1,19 @@
+{
+  "name": "helloworld",
+  "version": "1.0.0",
+  "description": "Sample app to test openshift",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davulurikoti/NodeProjects.git"
+  },
+  "author": "Koti Davuluri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davulurikoti/NodeProjects/issues"
+  },
+  "homepage": "https://github.com/davulurikoti/NodeProjects#readme"
+}
