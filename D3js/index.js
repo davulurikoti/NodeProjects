@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
-var d3 = require('./d3');
+var path = require('path');
 
+app.use(express.static('public'));
 app.get('/',(req,res)=>{
 	res.sendFile(__dirname+"/index.html");
 });
