@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Sample Page</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+		<script>
+			$(document).ready(()=>{
+				$("#addBillDetails").live('click', function() {
+    				alert($('#pes', $(this).closest("div.bill")).text());
+    				var num = $('#pes', $(this).closest("div.bill")).text();
+    				var data = {};
+					data.title = "title";
+					data.message = "message";
+    				$.ajax({
+						type: 'POST',
+						data: JSON.stringify(data),
+				        contentType: 'application/json',
+                        url: 'http://localhost:3000/getnumber',						
+                        success: function(data) {
+                            console.log('success');
+                            console.log(data);
+                        }
+                    });
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="bill1" class="bill">
+        <p id="pes">123654</p>
+        <input type="button" name="addBillDetails" value="click" id="addBillDetails"/>
+		</div> 
+		<div id="bill1" class="bill">
+        <p id="pes">896532</p>
+        <input type="button" name="addBillDetails" value="click" id="addBillDetails"/>
+		</div>   
+	</body>
+</html>

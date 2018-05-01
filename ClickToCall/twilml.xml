@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<Response>
+	<Say voice="woman">Hi. koti here. Please call me.</Say>
+	<Record maxLength="200" />
+</Response>

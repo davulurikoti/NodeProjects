@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Node server</title>
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+        <script src="index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                 $("button").click(function(){
+                     var arr = [];
+                     $('p').each((index,value)=>{
+                        alert(value.css('display'));
+                        arr[index] = value.textContent;
+                     });
+                     var data={};
+                     data.title="title";
+                     data.message = "message";
+                     data.paragraph = arr;
+                     $.ajax({type:'POST',
+                     data:JSON.stringify(data),
+                     contentType:'application/json',
+                     url:"http://localhost:3003/ajax",success:function(resukt){
+
+                     }});
+                });
+});
+        </script>
+    </head>
+    <body>
+        <h1>Hola Benos Dias</h1>
+        <br/>
+        <button>Click me!!</button>
+        <br/>
+        <div>
+            <p style="display:none">First Name</p>
+            <p>Second Name</p>
+            <p>Third Name</p>
+        </div>
+    </body>
+</html>
