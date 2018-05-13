@@ -4,12 +4,12 @@
             .step{
                 position: relative;
                 width: 900px;
-                padding: 40px;
+                /*padding: 40px;
                 margin: 20px auto;
                 box-sizing:  border-box; 
                 font-family: 'PT Serif', georgia, serif;
                 font-size: 48px;
-                line-height: 1.5;
+                line-height: 1.5;*/
                 }
             body{
                 font-family: 'PT Sans', sans-serif;
@@ -40,13 +40,14 @@
                 display:block;
                 width:  200px;
                 height: 200px;
-                background: rgb(215, 215, 215);
-                border: 0.5px solid rgba(0, 0, 0, .3);
+                background-color: white;
+                border: 1px solid rgba(0, 0, 0, .3);
                 border-radius: 10px;
                 box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
                 font-family: 'Open Sans', Arial, sans-serif;
                 font-size: 25px;
                 letter-spacing: -1px;
+                float: left;
             }
             .impress-enabled .step.active { opacity: 1 }
 
@@ -61,7 +62,10 @@
                 This is Second Slide.
             </div>
             <div class="step box" data-x="450" data-y="1000" data-scale="2">
-                <div class="process">View Layer to select the numbers</div>
+                
+            </div>
+            <div class="step" data-x="0" data-y="2500" data-rotate-x="-90" data-scale="2" style="width:1250px !important">
+                <img src="contextppt2.jpg">
             </div>
             <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10" style="pointer-events: none;">
             </div>
